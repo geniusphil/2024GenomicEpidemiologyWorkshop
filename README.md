@@ -87,7 +87,9 @@ $ perl annovar.pl -t 10 -i demo_sample.avinput -r hg19 -o demo_sample
     * dbnsfp47a_interpro
 
 
-### Processing Information
+---
+
+### Processing Information log
 ```bash
 -----------------------------------------------------------------
 NOTICE: Processing operation=g protocol=refGene
@@ -1199,7 +1201,7 @@ NOTICE: Finished downloading annotation files for hg38 build version, with files
 ```
 ---
 
-* Reference by:
+* Reference and data by:
     * [ANNOVAR](http://annovar.openbioinformatics.org/en/latest/)
     * [Using VAAST to Identify an X-Linked Disorder Resulting in Lethality in Male Infants Due to N-Terminal Acetyltransferase Deficiency](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3135802/)
     * [ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data](http://www.ncbi.nlm.nih.gov/pubmed/20601685)
@@ -1210,5 +1212,5 @@ NOTICE: Finished downloading annotation files for hg38 build version, with files
     * [OMIM - Ogden Syndrome](http://www.omim.org/entry/300855)
 
 
-* All Information 2023 Genomic Epidemiology Workshop Use
+* All Information 2024 Genomic Epidemiology Workshop Use
 * Edit by [Philippe](http://github.com/geniusphil)
