@@ -13,6 +13,7 @@ else mkdir -p ~/humandb;
 fi
 
 export DB_PATH=$HOME/humandb/
+ANNOVAR=$HOME/2024GenomicEpidemiologyWorkshop/annovar/annotate_variation.pl
 
 ##### Function err_msg #####
 function err_msg() {

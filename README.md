@@ -18,6 +18,16 @@
     * HG00403.chr20.gatk.hg38_multianno.txt
     * HG00403.chr20.gatk.hg38_multianno.xlsx
 
+---
+
+### .bashrc setting
+
+```bash
+
+# ANNOVAR
+export PATH=$PATH:/$HOME/2024GenomicEpidemiologyWorkshop/annovar/
+
+```
 
 ### Download Annovar human db
 
