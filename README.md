@@ -50,7 +50,7 @@ NOTICE: Finished writing 3105 SNP genotypes (2069 transitions and 1036 transvers
 ### Run Annovar table function
 
 * script
-* 
+
 ```bash
 $ perl annovar.pl -t 10 -i HG00403.chr20.gatk.avinput -r hg38 -o HG00403.chr20.gatk
 ```
@@ -99,7 +99,6 @@ $ perl annovar.pl -t 10 -i demo_sample.avinput -r hg19 -o demo_sample
     * exac03
     * intervar_20180118
     * dbnsfp47a_interpro
-
 
 ---
 
