@@ -13,7 +13,6 @@ else mkdir -p ~/humandb;
 fi
 
 export DB_PATH=$HOME/humandb/
-ANNOVAR=$HOME/2024GenomicEpidemiologyWorkshop/annovar/annotate_variation.pl
 
 ##### Function err_msg #####
 function err_msg() {
@@ -89,7 +88,8 @@ function filter_based() {
     annotate_variation.pl -buildver hg19 -downdb -webfrom annovar gnomad211_exome $DB_PATH
     annotate_variation.pl -buildver hg38 -downdb -webfrom annovar gnomad41_exome $DB_PATH
     
-    # ExAC 65000 exome allele frequency data for ALL, AFR (African), AMR (Admixed American), EAS (East Asian), FIN (Finnish), NFE (Non-finnish European), OTH (other), SAS (South Asian)). version 0.3. Left normalization done.
+    # ExAC 65000 exome allele frequency data for ALL, AFR (African), AMR (Admixed American), EAS (East Asian), FIN (Finnish), NFE (Non-finnish European), 
+    # OTH (other), SAS (South Asian)). version 0.3. Left normalization done.
     annotate_variation.pl -buildver hg19 -downdb -webfrom annovar exac03 $DB_PATH
     annotate_variation.pl -buildver hg38 -downdb -webfrom annovar exac03 $DB_PATH
     
@@ -101,7 +101,8 @@ function filter_based() {
     annotate_variation.pl -buildver hg19 -downdb -webfrom annovar intervar_20180118 $DB_PATH
     annotate_variation.pl -buildver hg38 -downdb -webfrom annovar intervar_20180118 $DB_PATH
     
-    # whole-exome SIFT, PolyPhen2 HDIV, PolyPhen2 HVAR, LRT, MutationTaster, MutationAssessor, FATHMM, MetaSVM, MetaLR, VEST, CADD, GERP++, DANN, fitCons, PhyloP and SiPhy scores from dbNSFP (protein domain for variants)
+    # whole-exome SIFT, PolyPhen2 HDIV, PolyPhen2 HVAR, LRT, MutationTaster, MutationAssessor, FATHMM, MetaSVM, MetaLR, VEST, CADD, GERP++, DANN, fitCons, 
+    # PhyloP and SiPhy scores from dbNSFP (protein domain for variants)
     # 20240617
     annotate_variation.pl -buildver hg19 -downdb -webfrom annovar dbnsfp47a_interpro $DB_PATH
     annotate_variation.pl -buildver hg38 -downdb -webfrom annovar dbnsfp47a_interpro $DB_PATH

@@ -21,7 +21,7 @@ my $input = $opt{i} or &Usage();
 my $num_threads = $opt{t} or &Usage();
 my $rf = $opt{r} or &Usage();
 my $output = $opt{o} or &Usage();
-my $PATH = '$HOME/2019GenomicsEpidemiologyWorkshop/annovar/';
+my $PATH = '$HOME/2024GenomicEpidemiologyWorkshop/annovar/';
 my $DB_PATH = '$HOME/humandb/';
 
 
