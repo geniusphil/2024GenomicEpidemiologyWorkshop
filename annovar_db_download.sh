@@ -82,7 +82,7 @@ function filter_based() {
     annotate_variation.pl -buildver hg19 -downdb -webfrom annovar gnomad211_genome $DB_PATH
     annotate_variation.pl -buildver hg38 -downdb -webfrom annovar gnomad41_genome $DB_PATH
     
-    nnotate_variation.pl -buildver hs1 -downdb -webfrom annovar gnomad_genome $DB_PATH
+    annotate_variation.pl -buildver hs1 -downdb -webfrom annovar gnomad_genome $DB_PATH
     
     # gnomAD exome collection gnomad41_genome 20240602 | gnomad211_genome 20190323
     annotate_variation.pl -buildver hg19 -downdb -webfrom annovar gnomad211_exome $DB_PATH
