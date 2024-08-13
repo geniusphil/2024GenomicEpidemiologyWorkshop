@@ -58,13 +58,13 @@ $ perl annovar.pl -t 10 -i HG00403.chr20.gatk.avinput -r hg38 -o HG00403.chr20.g
 * tab output
 
 ```bash
-$ table_annovar.pl HG00403.chr20.gatk.avinput $HOME/humandb/ -buildver hg38 -out HG00403.chr20.gatk -remove -protocol refGene,ensGene,cytoBand,genomicSuperDups,gwasCatalog,avsnp150,esp6500siv2_all,1000g2015aug_all,1000g2015aug_afr,1000g2015aug_amr,1000g2015aug_eur,1000g2015aug_eas,1000g2015aug_sas,nci60,cosmic89_coding,cosmic89_noncoding,clinvar_20190305,gnomad_genome,gnomad211_exome,exac03,intervar_20180118,dbnsfp31a_interpro -operation g,g,r,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f -otherinfo -nastring NA
+$ table_annovar.pl HG00403.chr20.gatk.avinput $HOME/humandb/ -buildver hg38 -out HG00403.chr20.gatk -remove -protocol refGene,ensGene,cytoBand,genomicSuperDups,gwasCatalog,avsnp150,esp6500siv2_all,1000g2015aug_all,1000g2015aug_afr,1000g2015aug_amr,1000g2015aug_eur,1000g2015aug_eas,1000g2015aug_sas,nci60,cosmic100,clinvar_20240611,gnomad41_genome,gnomad41_exome,exac03,intervar_20180118,dbnsfp31a_interpro -operation g,g,r,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f -otherinfo -nastring NA
 ```
 
 * csv output
 
 ```bash
-$ table_annovar.pl HG00403.chr20.gatk.avinput $HOME/humandb/ -buildver hg38 -out HG00403.chr20.gatk -remove -protocol refGene,ensGene,cytoBand,genomicSuperDups,gwasCatalog,avsnp150,esp6500siv2_all,1000g2015aug_all,1000g2015aug_afr,1000g2015aug_amr,1000g2015aug_eur,1000g2015aug_eas,1000g2015aug_sas,nci60,cosmic89_coding,cosmic89_noncoding,clinvar_20190305,gnomad211_genome,gnomad211_exome,exac03,intervar_20180118,dbnsfp31a_interpro, -operation g,g,r,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f -otherinfo -nastring . -csvout
+$ table_annovar.pl HG00403.chr20.gatk.avinput $HOME/humandb/ -buildver hg38 -out HG00403.chr20.gatk -remove -protocol refGene,ensGene,cytoBand,genomicSuperDups,gwasCatalog,avsnp150,esp6500siv2_all,1000g2015aug_all,1000g2015aug_afr,1000g2015aug_amr,1000g2015aug_eur,1000g2015aug_eas,1000g2015aug_sas,nci60,cosmic100,clinvar_20240611,gnomad41_genome,gnomad41_exome,exac03,intervar_20180118,dbnsfp31a_interpro, -operation g,g,r,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f -otherinfo -nastring . -csvout
 ```
 
 ### Easy Run Annovar talbe function
@@ -94,7 +94,7 @@ $ perl annovar.pl -t 10 -i demo_sample.avinput -r hg19 -o demo_sample
     * gnomad41_genome
     * gnomad41_exome
     * nci60
-    * cosmic85
+    * cosmic100
     * clinvar_20240611
     * exac03
     * intervar_20180118
